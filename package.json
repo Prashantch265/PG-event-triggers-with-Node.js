@@ -1,7 +1,7 @@
 {
   "name": "pg-event-triggers-with-node",
   "version": "1.0.0",
-  "description": "A nodejs event listener that listens the call of PG event triggers",
+  "description": "A nodejs event listener that uses PG LISTEN and NOTIFY with event triggers",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -26,7 +26,6 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "pg": "^8.6.0",
-    "pg-hstore": "^2.3.4",
     "pg-listen": "^1.7.0"
   },
   "devDependencies": {
