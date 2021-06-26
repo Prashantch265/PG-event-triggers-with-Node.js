@@ -7,7 +7,7 @@ const subscriber = createSubscriber({
 });
 
 subscriber.notifications.on("new_event", (payload) => {
-  // Payload as passed to subscriber.notify() (see below)
+  // Payload as passed to subscriber.notify()
   console.log("Received notification in 'new_event':", payload);
 });
 
