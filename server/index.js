@@ -5,4 +5,7 @@ let port = process.env.PORT;
 
 app.listen(port, () => console.log(`Server started at ${port}`));
 
-client.connect();
+client
+  .connect()
+  .then(() => console.log("DB connected"))
+  .catch((err) => console.log(err));
